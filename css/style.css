@@ -21,7 +21,7 @@
   animation: col1animation 5s infinite;
 }
 
-/* changing color for column 1 */
+/* column 1 background color changing */
 @keyframes col1animation {
   0% {
     background-color: rgb(218, 188, 23);
@@ -30,6 +30,20 @@
     background-color: blue;
   }
 }
+
+.one {
+  animation: wordone 5s infinite;
+}
+/* column 1 word One color change */
+@keyframes wordone {
+  0% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
 .col2 {
   display: flex;
   align-items: center;
@@ -40,11 +54,13 @@
   background-color: blue;
 }
 
+/* word tree style & animation */
 .tree {
   position: relative;
   animation: word3down 5s infinite;
   animation: word3up 5s infinite;
 }
+/* column 3 down animation */
 @keyframes word3down {
   0% {
     top: 0px;
@@ -67,7 +83,7 @@
     color: white;
   }
 }
-
+/* columnn 3 up animation */
 @keyframes word3up {
   0% {
     top: 500px;
