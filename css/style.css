@@ -42,32 +42,51 @@
 
 .tree {
   position: relative;
-  animation: wordtree 5s infinite;
+  animation: word3down 5s infinite;
+  animation: word3up 5s infinite;
 }
-@keyframes wordtree {
+@keyframes word3down {
   0% {
     top: 0px;
-    left: 0px;
     color: white;
   }
   25% {
-    top: 0px;
-    left: 100px;
+    top: 150px;
     color: grey;
   }
   50% {
-    top: 100px;
-    left: 100px;
+    top: 300px;
     color: black;
   }
   75% {
-    top: 100px;
-    left: 0px;
+    top: 400px;
+    color: grey;
+  }
+  100% {
+    top: 500px;
+    color: white;
+  }
+}
+
+@keyframes word3up {
+  0% {
+    top: 500px;
+    color: white;
+  }
+  25% {
+    top: 400px;
+    color: grey;
+  }
+  50% {
+    top: 300px;
+    color: black;
+  }
+  75% {
+    top: 150px;
     color: grey;
   }
   100% {
     top: 0px;
-    left: 0px;
     color: white;
   }
 }
